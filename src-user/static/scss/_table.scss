@@ -1,0 +1,137 @@
+.VueTables {
+	.page-link {
+		color: #000;
+	}
+	.page-item {
+		&.active {
+			.page-link {
+				background: color("primary");
+				border-color: color("primary");
+			}
+		}
+		.page-link {
+			padding: 0px 15px;
+			height: 40px;
+			line-height: 40px;
+			min-width: 40px;
+		}
+	}
+}
+
+.VueTables__limit-field {
+	display: none;
+}
+
+.VueTables__table {
+	thead{
+		th {
+			border-top: none;
+			white-space: nowrap;
+			position: relative;
+			border-bottom-width: 1px;
+			&.VueTables__sortable {
+				padding-right: 30px;
+			}
+		}
+	}
+}
+
+.VueTables__filters-row {
+	th {
+		opacity: 0.6;
+		position: relative;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+	}
+}
+.VueTables__search-field {
+	display: flex;
+	label {
+		display: none;
+	}
+}
+
+/*
+* 📣 : Sorting
+*/
+.sort-icon {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	display: block;
+	right: 5px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	&:after,
+	&:before {
+		position: absolute;
+		font-family: "Material Icons";
+		opacity: 0.1;
+		font-size: 20px;
+		height: 10px;
+		line-height: 10px;
+	}
+	&:after {
+		top: 0;
+		content: "arrow_drop_up";
+	}
+	&:before {
+		bottom: 0;
+		content: "arrow_drop_down";
+	}
+}
+.sort-icon__sortable {
+}
+.sort-icon__up {
+	&:before {
+		opacity: 1;
+	}
+}
+.sort-icon__down {
+	&:after {
+		opacity: 1;
+	}
+}
+
+/*
+* 📣 : Table Actions
+*/
+
+.table-user {
+	display: flex;
+	align-items: center;
+}
+
+.table-user__photo {
+	flex: 0 0 30px;
+	margin: 0 10px 0 0px;
+	img {
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+.table-user__name {
+	flex: 1 1 auto;
+	margin: 0;
+	font-weight: bold;
+}
+
+.table-actions {
+	display: flex;
+	.btn {
+		+ .btn {
+			margin-left: 5px;
+		}
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		line-height: 30px;
+		border-radius: 50%;
+		i {
+			font-size: 18px;
+		}
+	}
+}

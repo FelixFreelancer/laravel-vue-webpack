@@ -1,0 +1,27 @@
+.to-do {
+	background: #fff8d7;
+	border: 2px solid #ffbd4a;
+	padding: 20px;
+}
+.to-do__title {
+	display: flex;
+	align-items: center;
+	span {
+		font-size: 18px;
+		font-weight: 600;
+	}
+	> img {
+		margin-right: 10px;
+	}
+}
+
+.to-do__desc {
+	font-size: 12px;
+	margin: 10px 0 0 0;
+}
+
+@include xs-down {
+	.to-do__desc {
+		word-wrap: break-word;
+	}
+}

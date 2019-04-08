@@ -1,0 +1,10 @@
+/*
+* 📣 : Shadows
+*/
+@function shadow($key: "default") {
+	@return map-get($shadowArray, $key);
+}
+$shadowArray: (
+	"default":0 10px 20px 0 rgba(0, 0, 0, 0.1),
+	"raised":0 15px 30px 0 rgba(0, 0, 0, 0.2)
+);

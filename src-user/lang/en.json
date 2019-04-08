@@ -1,0 +1,24 @@
+{
+	"dashboard": "Dashboard",
+	"menu": "Menu",
+	"order": "Orders",
+	"dinein": "Dine In",
+	"homedelivery": "Home Delivery",
+	"takeaway": "Takeaway",
+	"revenue": "Revenue",
+	"net_revenue": "Net Revenue",
+	"customers": "Customers",
+	"live": "Live",
+	"discount": "Discount",
+	"cash": "Cash",
+	"card": "Card",
+	"settings": "Settings",
+	"payment": "Payment",
+	"icon": {
+		"order": "shopping_cart",
+		"revenue": "monetization_on",
+		"customers": "people",
+		"live": "schedule"
+	},
+	"rupee": "₹"
+}

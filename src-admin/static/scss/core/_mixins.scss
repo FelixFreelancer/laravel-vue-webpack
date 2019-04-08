@@ -1,0 +1,126 @@
+/*
+* 📣 : Media Queries
+*/
+//Desktop To Mobile
+@mixin lg-down{
+  @media only screen and (max-width: 1199px){
+    @content;
+  }
+}
+@mixin md-down{
+  @media only screen and (max-width: 991px){
+    @content;
+  }
+}
+@mixin sm-down{
+  @media only screen and (max-width: 767px){
+    @content;
+  }
+}
+@mixin xs-down{
+  @media only screen and (max-width: 575px){
+    @content;
+  }
+}
+@mixin xxs-down{
+  @media only screen and (max-width: 400px){
+    @content;
+  }
+}
+
+
+@mixin gradient($start:$primary,$end:$secondary,$orientation:90deg,$opacity:1){
+    background: $start; /* Old browsers */
+    background: -moz-linear-gradient($orientation, rgba($start, $opacity) 0%, rgba($end, $opacity) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient($orientation, rgba($start, $opacity) 0%,rgba($end, $opacity) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient($orientation, rgba($start, $opacity) 0%,rgba($end, $opacity) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start}', endColorstr='#{$end}',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin text-gradient(){
+    @supports (mix-blend-mode: lighten) {
+        display: inline-block;
+        position: relative;
+        color: #000;
+        background: #fff;
+        mix-blend-mode: multiply;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: -webkit-linear-gradient(right,$primary-color, $secondary-color);
+            background: linear-gradient(to right,$primary-color, $secondary-color);
+            pointer-events: none;
+            mix-blend-mode: screen;
+        }
+    }
+    color: $primary-color;
+}
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+@mixin responsive($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+@mixin ellipsis(){
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin position($value1,$value2,$value3,$value4,$value5){
+    position: $value1;
+    top: $value2;
+    right: $value3;
+    bottom: $value4;
+    left: $value5;
+}
+
+@mixin button-color($color,$hoverColor){
+    background-color: $color;
+    &:hover{
+        background-color: $hoverColor;
+    }
+}
+
+@mixin clear(){
+    &:before,&:after{
+        content: " ";
+        display: table;
+    }
+    &:after{
+        clear: both;
+    }
+}
+
+/*
+* 📣 : Get inverted Color
+*/
+@function contrast($key: "dark",$opa:1){
+    @if $key=="dark"{
+        @return rgba(255,255,255,$opa)
+    }
+    @else{
+        @return rgba(0,0,0,$opa)
+    }
+}

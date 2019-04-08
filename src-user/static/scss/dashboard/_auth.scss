@@ -1,0 +1,74 @@
+.authen {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 30px;
+	width: 100%;
+}
+.code__title {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+	a {
+		color: color("accent");
+	}
+}
+.code__btn {
+	display: flex;
+	margin-left: 5px;
+	button {
+		padding: 0px 10px;
+	}
+	img {
+		width: 50px;
+	}
+}
+.code__input {
+	display: flex;
+	margin-top: 10px;
+	input {
+		height: 50px;
+		line-height: 50px;
+		border: 2px solid color("primary");
+		text-align: center;
+		max-width: 50px;
+		padding: 0;
+		margin: 0 0 0 5px;
+		margin-top: 0;
+	}
+	.button {
+		margin: 0 5px 0 0px;
+	}
+}
+
+@include lg-down {
+}
+
+@include xs-down {
+	.code__input {
+		.button {
+			height: 35px;
+			line-height: 35px;
+			justify-content: center;
+			margin: 0;
+			svg {
+				font-size: 20px;
+			}
+		}
+		input {
+			height: 35px;
+			padding: 0 5px;
+
+			line-height: 35px;
+		}
+	}
+	.code__title {
+		font-size: 12px;
+	}
+	.code__btn {
+		display: flex;
+		width: 100%;
+		margin-left: 5px;
+		flex-direction: column;
+	}
+}

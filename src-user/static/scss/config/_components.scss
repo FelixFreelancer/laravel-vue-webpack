@@ -1,0 +1,25 @@
+/*
+* 📣 : Header Settings
+*/
+@function header($key) {
+	@return map-get($header, $key);
+}
+$header: ("height": 50px);
+
+/*-----------------------------------------------*/
+/*
+* 📣 : Sidebar Settings
+*/
+@function sidebar($key) {
+	@return map-get($sidebar, $key);
+}
+$sidebar: ("width": 200px);
+
+/*-----------------------------------------------*/
+/*
+* 📣 : Navigation Settings
+*/
+@function nav($key) {
+	@return map-get($nav, $key);
+}
+$nav: ("borderColor": contrast(sidebar("theme"), 0.1));

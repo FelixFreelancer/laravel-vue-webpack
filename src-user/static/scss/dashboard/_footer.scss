@@ -1,0 +1,86 @@
+.dashboard__footer {
+	margin-top: 30px;
+	&.all-center {
+		text-align: center;
+	}
+}
+
+// security setting
+.two-step {
+	padding: 20px;
+	background: #dbdbdb;
+	border-radius: 7px;
+}
+.two-step__header {
+	display: flex;
+	justify-content: space-between;
+}
+.two-step__title {
+	margin: 0;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+	.two-step__help {
+		background: color("accent");
+		font-size: 12px;
+		color: #fff;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		margin-left: 10px;
+		&:hover {
+			background: #278c34;
+		}
+	}
+}
+.two-step__desc {
+	margin: 0;
+	font-size: 14px;
+}
+.activate {
+	margin-left: 20px;
+	white-space: nowrap;
+}
+.steps {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin: 0 -20px;
+	> li {
+		padding: 20px;
+	}
+}
+.step__txt {
+	margin: 5px 0 0 0;
+	font-size: 14px;
+}
+
+@include md-down {
+	.steps {
+		flex-direction: column;
+		> li {
+			padding: 10px 0;
+			svg {
+				transform: rotate(90deg);
+			}
+		}
+	}
+	.two-step__header {
+		flex-direction: column;
+		margin-bottom: 30px;
+		align-items: center;
+		text-align: center;
+	}
+	.two-step__txt {
+		margin-bottom: 20px;
+	}
+	.two-step__title {
+		justify-content: center;
+	}
+}

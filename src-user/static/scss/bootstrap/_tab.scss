@@ -1,0 +1,12 @@
+.tabs {
+	.nav-tabs {
+		.nav-item {
+			.nav-link {
+				color: $grey-500;
+				&.active {
+					color: #000;
+				}
+			}
+		}
+	}
+}

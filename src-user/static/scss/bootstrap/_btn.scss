@@ -1,0 +1,52 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	i {
+		+ span {
+			margin-left: 5px;
+		}
+	}
+	&:hover:not(.btn-link) {
+	}
+}
+.btn--loading {
+	position: relative;
+	transition: all 0.3s ease 0s;
+	i {
+		display: none;
+	}
+	&:before {
+		display: flex;
+		content: "";
+		font-family: "Material Icons";
+		background-image: url("~Images/loader-white.svg");
+		line-height: 1;
+		align-items: center;
+		margin: 0 5px 0 5px;
+		font-size: 1.2rem;
+		width: 40px;
+		height: 40px;
+	}
+}
+.btn--full {
+	display: flex;
+}
+.btn--icon {
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	&.btn-sm {
+		width: 30px;
+		height: 30px;
+		i {
+			font-size: 18px;
+		}
+	}
+}
+.btn--round {
+	border-radius: 50%;
+}
+.btn--link {
+	color: $grey-500;
+}

@@ -1,0 +1,39 @@
+{
+	"db": {
+		"email": "Email",
+		"id": "ID",
+		"name": "Name",
+		"contact_number": "Contact Number",
+		"customer_code": "Customer Code",
+		"plan_type": "Plan",
+		"status": "Status",
+		"parcel_number": "Parcel Number",
+		"postal_company": "Postal Company",
+		"received_on": "Received On",
+		"requested_on": "Requested On",
+		"customer_status": "Customer Status",
+		"total": "Total",
+		"customer_name": "Customer",
+		"quotation_number": "Quotation Number",
+		"item_name": "Item",
+		"shipment_name": "Shipment",
+		"amount": "Amount",
+		"user_name": "Customer",
+		"country": "Country",
+		"tracking_number": "Tracking Number"
+	},
+	"icon": {
+		"quotation": "monetization_on",
+		"customer": "people",
+		"dashboard": "dashboard",
+		"shipment": "widgets",
+		"transaction": "credit_card",
+		"user": "account_circle",
+		"log": "assignment",
+		"country": "language",
+		"warehouse": "store",
+		"invoice": "receipt",
+		"setting": "settings",
+		"logout": "exit_to_app"
+	}
+}

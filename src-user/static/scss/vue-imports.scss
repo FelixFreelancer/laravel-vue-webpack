@@ -1,0 +1,10 @@
+/*
+* 📣 : This file is used to import all SCSS variables & mixins into Vue Component
+*/
+
+@import "config/_material-colors";
+@import "config/_colors";
+@import "config/_project";
+@import "config/_components";
+@import "config/_prop";
+@import "core/_mixins";

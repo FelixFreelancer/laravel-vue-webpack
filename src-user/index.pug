@@ -1,0 +1,17 @@
+doctype html 
+html(lang="en")
+	head
+		include includes/meta.pug
+		title Global Parcel Forward
+		include includes/inline-css.pug
+	body
+		include includes/header.pug
+		.wait
+			.wait__logo
+				img(src="~Images/logo.png")
+			.wait__loader
+				img(src="~Images/loader.svg")
+				p Loading...
+		.wrap
+			#app
+		include includes/footer.pug

@@ -1,0 +1,123 @@
+/*
+* 📣 : Button Config
+*/
+//Variable Names Pattern : element-property--modifiers
+$button-borderRadius: 5px;
+$button-height--normal: 40px;
+$button-height--small: 35px;
+$button-height--large: 50px;
+$button-height--xlarge: 70px;
+
+/*
+* 📣 : Default Button
+*/
+button,
+.button {
+	height: $button-height--large;
+	padding: 0px 20px;
+	font-size: fontSize("normal");
+	cursor: pointer;
+	border-radius: $button-borderRadius;
+	text-decoration: none;
+	color: #000;
+	display: inline-flex;
+	align-items: center;
+	outline: 0;
+	text-transform: uppercase;
+	font-family: font("title");
+	@include button-shadow;
+	&:active {
+		box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+	}
+}
+
+/*
+* 📣 : Normal Primary Button
+*/
+.button--primary {
+	background: color("primary");
+	border: none;
+	color: fontColor("primary");
+	&:hover {
+		background: darken(color("primary"), 10);
+		color: fontColor("primary");
+	}
+}
+
+/*
+* 📣 : Accent Button
+*/
+.button--accent {
+	background: color("accent");
+	border: none;
+	color: fontColor("accent") !important;
+	&:hover {
+		background: darken(color("accent"), 5);
+		color: fontColor("accent");
+	}
+}
+
+/*
+* 📣 : Line Button
+*/
+.button--line {
+	background: transparent;
+	border: 2px solid;
+	&.button--primary {
+		border-color: color("primary");
+		color: color("primary");
+		&:hover {
+			background: color("primary");
+			color: fontColor("primary");
+		}
+	}
+	&.button--accent {
+		border-color: color("accent");
+		color: color("accent");
+		&:hover {
+			background: color("accent");
+			color: fontColor("accent");
+		}
+	}
+}
+
+/*
+* 📣 : Large Button
+*/
+.button.button--large {
+	height: $button-height--large;
+	padding: 0px 30px;
+}
+
+/*
+* 📣 : Small Button
+*/
+.button.button--small {
+	height: $button-height--small;
+	line-height: $button-height--small;
+	padding: 0px 25px;
+	border-radius: 3px;
+	font-size: fontSize("small");
+}
+
+/*
+* 📣 : Icon button
+*/
+.button.button--icon {
+	width: $button-height--normal;
+	padding: 0;
+	text-align: center;
+	justify-content: center;
+	i,
+	.button__icon {
+		margin: 0;
+	}
+}
+
+/*
+* 📣 : Button With Icon
+*/
+.button__icon {
+	font-style: normal;
+	margin-right: 5px;
+}

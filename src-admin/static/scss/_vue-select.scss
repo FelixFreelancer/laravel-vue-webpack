@@ -1,0 +1,12 @@
+.option {
+	display: flex;
+	align-items: center;
+}
+.option__icon {
+	flex: 0 0 40px;
+	padding: 2px;
+	margin-right: 5px;
+	img {
+		width: 100%;
+	}
+}

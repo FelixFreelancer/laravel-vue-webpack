@@ -1,0 +1,8 @@
+User-agent: * 
+Disallow: /appsecure/
+Disallow: /blog/wp-admin/
+Disallow: /cgi-bin/
+Disallow: /config/
+Disallow: /database/
+Disallow: /dev/
+Sitemap: https://www.globalparcelforward.com/sitemap.xml

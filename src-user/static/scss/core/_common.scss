@@ -1,0 +1,44 @@
+/*
+* 📣 : Override browser defaults
+*/
+body {
+	//font-family: font("title");
+	padding: 0;
+	margin: 0;
+}
+
+/*
+* 📣 : Typography
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: font("title");
+	font-weight: 500;
+}
+
+p,
+button {
+	font-family: font("content");
+}
+
+/*
+* 📣 : Common Classes
+*/
+.ul-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+* 📣 : Common Animation Keyframes
+*/
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

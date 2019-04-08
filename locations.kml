@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for Global Parcel Forward.</name>
+		<atom:author>
+			<atom:name>Global Parcel Forward</atom:name>
+		</atom:author>
+		<atom:link rel="related" href="https://www.globalparcelforward.com" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[Global Parcel Forward]]></name>
+				<address><![CDATA[Unit 1, Finishing House, Peel St, Willenhall WV13 2BZ, UK, Willenhall, WV13 2BZ, United Kingdom]]></address>
+				<phoneNumber><![CDATA[01902 272004]]></phoneNumber>
+				<description><![CDATA[Global Parcel Forward is the best UK parcel forwarding company. We provide package forwarding services and parcel delivery for international shoppers at cheapest prices. Sign up ]]></description>
+				<Point>
+					<coordinates>-2.0577055,52.5840589,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>

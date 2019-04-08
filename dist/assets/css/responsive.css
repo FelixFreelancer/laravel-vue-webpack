@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document -- Responsive Design */
+/*===============================================================
+        Creating on 05-10-2018 by Susanta Das; Version: 0.0.0.1  =
+                                                                =    
+=================================================================*/
+
+
+/*=================     Media Query     =================*/
+@media(max-width: 1024px) {
+    
+    /*.navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+	.navbar-collapse.collapse.in{
+	  display:block !important;
+	}
+	
+	.navbar-default .navbar-nav>li>a{
+		padding: 16px 15px;
+	}*/
+}
+
+@media(max-width: 992px) {
+	.hero-area{
+		min-height: 422px;
+	}
+    
+}
+
+@media(max-width: 768px) {
+	.hero-area{
+		min-height: 360px;
+	}
+	.hero-area h1{
+		margin-right: 209px;
+	}
+	.navbar-default .navbar-nav>li>a{
+		padding: 16px 15px;
+	}
+	img{
+		margin: auto;
+	}
+
+}
+
+@media(max-width: 480px) {
+	
+	.hero-area{
+		min-height: 453px;
+	}
+	.hero-area h1{
+		margin-right: 0px;
+	}
+	.section--header{
+		font-size: 43px;
+	}
+	.ptn-2 h1{
+		text-align: center;
+	}
+	.footer .upper-footer .ready-to-st img{
+		display: none;
+	}
+	.footer .lower-footer .mny-card{
+		text-align: center;
+	}
+	.footer .lower-footer p{
+		text-align: center;
+	}
+	.navbar-default .navbar-nav>li>a{
+		padding: 16px 15px;
+	}
+	.footer .lower-footer img{
+		width: 66px;
+	}
+	
+	.hero-area h1{
+		font-size: 41px;
+	}
+	
+	
+    
+}
+
+@media(max-width: 360px) {
+	
+	.footer .lower-footer img{
+		width: 66px;
+	}
+   
+}
+
+@media(max-width: 320px) {
+	
+	
+	
+}
+

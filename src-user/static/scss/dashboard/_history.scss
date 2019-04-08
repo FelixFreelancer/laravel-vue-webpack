@@ -1,0 +1,10 @@
+.history-wrap {
+	background: #fff;
+	padding: 20px;
+}
+
+@include xs-down {
+	.history-wrap {
+		padding: 10px 0;
+	}
+}

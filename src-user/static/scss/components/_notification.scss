@@ -1,0 +1,16 @@
+.notifications {
+	margin: 20px;
+}
+.notification-wrapper {
+	overflow: visible !important;
+}
+.vue-notification {
+	border-left: none !important;
+	padding: 15px 20px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.notification-title {
+	font-size: 16px;
+	font-weight: normal;
+}

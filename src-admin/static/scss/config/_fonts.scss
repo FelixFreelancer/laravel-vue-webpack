@@ -1,0 +1,31 @@
+/*
+* 📣 : Font Values
+*/
+
+@function font($key: "content") {
+	@return map-get($fonts, $key);
+}
+
+$system-font: '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+$title-font: $system-font;
+$content-font: $system-font;
+
+$fonts: (
+	"title": unquote($title-font),
+	"content": unquote($content-font),
+	"system": unquote($system-font)
+);
+
+/*
+* 📣 : Font Size Values
+*/
+@function fontSize($key: "normal") {
+	@return map-get($font-size, $key);
+}
+$font-size: (
+	"x-small": 0.8rem,
+	"small": 0.9rem,
+	"normal": 1rem,
+	"large": 1.2rem,
+	"x-large": 1.4rem
+);

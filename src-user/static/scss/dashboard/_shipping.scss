@@ -1,0 +1,100 @@
+.shipping--box {
+	.shipments__header {
+		.shipping--first {
+		}
+		.shipments__title {
+			margin-top: 0px;
+			font-family: font("title");
+		}
+	}
+	.shipping--middle {
+		.shipments__info {
+			> li {
+				&:nth-child(2) {
+					span,
+					label {
+						display: inline-block;
+					}
+					span {
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	}
+	.shipping--last {
+		.shipments__info {
+			span {
+				font-weight: 300;
+			}
+			> li + li {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	a.shipments__status {
+		margin-top: 2px;
+		background: #fff;
+		box-shadow: none;
+		height: 30px;
+		line-height: 29px;
+		font-size: 10px;
+		font-weight: 600;
+		border: 2px solid color("primary");
+		white-space: nowrap;
+		cursor: default;
+		&:hover{
+			text-decoration: none;
+		}
+		&.paid{
+			color: #e22525;
+			border: 2px solid #e22525;
+			margin-top: 10px;
+		}
+	}
+}
+.dimensions--shipping {
+	display: flex;
+	flex-wrap: wrap;
+	.dimensions__title {
+		width: 100%;
+	}
+	.labelspan {
+		margin-right: 5px;
+		padding-right: 5px;
+		border-right: 1px solid #dadada;
+		&:last-child {
+			border-right: none;
+		}
+		span {
+			margin: 0 0 0 5px !important;
+		}
+	}
+}
+
+@include sm-down {
+	.shipping--box {
+		.shipments__header {
+			.shipping--first {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+	}
+}
+@include xs-down {
+	.dimensions--shipping {
+		flex-direction: column;
+		.labelspan {
+			+ .labelspan {
+				margin: 5px 0 0 0;
+				border-left: none;
+				padding-left: 0;
+			}
+			span {
+				margin: 0 0 0 5px !important;
+			}
+		}
+	}
+}

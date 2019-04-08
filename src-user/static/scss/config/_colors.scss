@@ -1,0 +1,22 @@
+/*
+* 📣 : Color Values
+*/
+@function color($key: "primary") {
+	@return map-get($colors, $key);
+}
+$colors: (
+	"secondary": #063c5d,
+	"primary": #0d476b,
+	"accent": #33ab43
+);
+
+/*
+* 📣 : Font Color Values
+*/
+@function fontColor($key: "primary") {
+	@return map-get($font-colors, $key);
+}
+$font-colors: (
+	"primary": #ffffff,
+	"accent": #ffffff
+);

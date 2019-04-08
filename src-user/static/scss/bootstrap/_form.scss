@@ -1,0 +1,33 @@
+.form-group {
+	label {
+		margin-bottom: 3px;
+	}
+}
+.form-title {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dadada;
+}
+.form-error {
+	font-size: 13px;
+	color: $red-500;
+}
+.form-footer {
+	display: flex;
+	.btn {
+		+ .btn {
+			margin-left: 10px;
+		}
+	}
+}
+.form-footer--has-margin {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid $grey-300;
+}
+.form {
+	label {
+		font-size: 14px;
+		color: $grey-700;
+	}
+}

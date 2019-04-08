@@ -1,0 +1,13 @@
+/*
+* 📣 : Bootstrap Overrides
+*/
+$theme-colors: (
+	"primary": color("primary"),
+	"secondary": color("secondary"),
+	"success": $green-500,
+	"info": $cyan-500,
+	"warning": $yellow-500,
+	"danger": $red-500,
+	"light": $grey-100,
+	"dark": $grey-800
+);

@@ -1,0 +1,125 @@
+.shipments-box {
+	padding: 25px;
+	background: #fff;
+	+ .shipments-box {
+		margin-top: 30px;
+	}
+}
+.shipments__header {
+	display: flex;
+	justify-content: space-between;
+}
+.shipments__text {
+	display: block;
+	font-size: 12px;
+	margin: 0px;
+	line-height: 14px;
+	margin-bottom: 10px;
+}
+.shipments-detail {
+	padding-right: 50px;
+}
+.shipments__info {
+	> li {
+		font-size: 0px;
+		& + li {
+			margin-top: 20px;
+		}
+		a {
+			font-size: 12px;
+			color: color("primary");
+			font-family: font("title");
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	label {
+		font-size: 12px;
+		font-family: font("title");
+		line-height: 13px;
+		&.shipments__title {
+			margin-top: 10px;
+			margin-bottom: 2px;
+			display: block;
+			color: color("primary");
+		}
+	}
+	span {
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 13px;
+		margin-left: 5px;
+		&.normal {
+			font-weight: 300;
+			fonts-size: 12px;
+		}
+	}
+}
+.shipments-info {
+	+ .shipments-info {
+		margin-left: 20px;
+	}
+}
+.shipments-info {
+	.shipments__info {
+		label {
+			display: block;
+		}
+		span {
+			margin-left: 0px;
+			font-size: 12px;
+			display: block;
+			margin-top: 2px;
+		}
+		.dimensions {
+			.labelspan {
+				display: flex;
+				margin-bottom: 10px;
+				label {
+					font-family: font("content");
+				}
+				span {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}
+
+.shipments__content {
+	margin-top: 20px;
+	.dashboard__content__title {
+		font-size: 18px;
+	}
+}
+
+@include sm-down {
+	.shipments-box {
+		padding: 15px;
+	}
+	.shipments__header {
+		flex-direction: column;
+		.shipments-info,
+		.shipments-detail {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		.shipments-info {
+			margin-top: 10px;
+		}
+	}
+	.shipments__info {
+		> li + li {
+			margin-top: 10px;
+		}
+	}
+	.shipments-detail {
+		padding-right: 0px;
+	}
+	.shipments-info {
+		+ .shipments-info {
+			margin: 20px 0 0 0;
+		}
+	}
+}
